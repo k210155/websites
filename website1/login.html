@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        /* body{
+            background-color: rgb(15, 13, 13);
+        } */
+
+        .header {
+            font-size: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            /* background-color: rgb(32, 25, 25); */
+
+        }
+
+        .logo {
+            color: white;
+            flex: 1;
+            text-align: left;
+
+        }
+
+
+        .center-menu {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        .center-menu a {
+            /* border: 2px solid black; */
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .right-menu {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+
+        }
+
+        .right-menu input {
+            margin-right: 10px;
+        }
+
+        .right-menu a {
+            color: white;
+        }
+
+        .center-menu a:hover,
+        .center-menu a.active {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+
+        .login {
+            /* border: 1px solid white; */
+            
+            display: flex;
+            flex-direction: column;
+            width: 15rem;
+            margin-top: 16rem;
+            margin-left: 35rem;
+            padding: 13px;
+
+        }
+
+        .login input {
+            border-radius: 12px;
+            margin: 3px;
+            padding: 3px;
+            font-size: 20px;
+        }
+
+        .login::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: url(/shutters-669296_1280.jpg);
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        .btn {
+            border-radius: 12px;
+            margin: 3px;
+            padding: 3px;
+            font-size: 20px;
+
+
+        }
+
+        .btn:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+
+            border-radius: 12px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div class="logo">Listed</div>
+        <div class="center-menu">
+            <a href="index.Html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="right-menu">
+            <input type="text" placeholder="Search">
+            <a href="login.html">login</a>
+        </div>
+    </div>
+
+    <section class="login">
+        <input type="email" name="Email" placeholder="Enter your Email">
+        <input type="password" name="password" placeholder="Enter your password">
+        <button class="btn">login</button>
+        <button class="btn">Sign Up</button>
+
+        <!-- <input type="button" value="login">
+            <input type="button" value="sign up"> -->
+    </section>
+</body>
+
+</html>

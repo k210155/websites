@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Quicksand', sans-serif;
+
+        }
+
+        .header {
+            font-size: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            /* background-color: rgb(32, 25, 25); */
+            top: 0;
+            left: 0;
+
+        }
+
+        .logo {
+            color: white;
+            flex: 1;
+            text-align: left;
+
+        }
+
+
+        .center-menu {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        .center-menu a {
+            /* border: 2px solid black; */
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .right-menu {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+
+        }
+
+        .right-menu input {
+            margin-right: 10px;
+        }
+
+        .right-menu a {
+            color: white;
+        }
+
+        .center-menu a:hover {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: url(/shutters-669296_1280.jpg);
+            z-index: -1;
+            opacity: 0.7;
+
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            margin-top: 20%;
+        }
+
+        .phone {
+            background-color: white;
+            width: 20rem;
+            border-radius: 16px;
+            padding: 12px;
+            margin: 12px;
+        }
+
+        .phone img {
+            width: 50px;
+            margin-left: 7rem;
+            
+            
+        }
+
+        .message {
+            background-color: white;
+            width: 20rem;
+            border-radius: 16px;
+            padding: 12px;
+            margin: 12px;
+        }
+
+        .message img {
+            width: 50px;
+            margin-left: 7rem;
+        }
+
+        .livechat {
+            background-color: white;
+            width: 20rem;
+            border-radius: 16px;
+            padding: 12px;
+            margin: 12px;
+        }
+
+        .livechat img {
+            width: 50px;
+            margin-left: 7rem;
+        }
+        .h1{
+            margin-left: 5rem;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div class="logo">Listed</div>
+        <div class="center-menu">
+            <a href="index.Html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="right-menu">
+            <input type="text" placeholder="Search">
+            <a href="login.html">login</a>
+        </div>
+    </div>
+
+    <section class="container">
+        <div class="phone">
+            <img src="/chat-6536649_1280.png" alt="">
+            <h1 class="h1">Call Us Now</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, cum animi. Eveniet,
+                reprehenderit.</p>
+        </div>
+        <div class="message">
+            <img src="/icon-347234_1280.webp" alt="">
+            <h1 class="h1">Any Queries</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, cum animi. Eveniet,
+                reprehenderit.</p>
+        </div>
+        <div class="livechat">
+            <img src="/icons-1831927_1280.webp" alt="">
+            <h1 class="h1">Live Chat</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, cum animi. Eveniet,
+                reprehenderit.</p>
+        </div>
+
+    </section>
+</body>
+
+</html>

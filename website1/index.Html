@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Quicksand', sans-serif;
+
+        }
+
+        .header {
+            font-size: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            /* background-color: rgb(32, 25, 25); */
+            top: 0;
+            left: 0;
+
+        }
+
+        .logo {
+            color: white;
+            flex: 1;
+            text-align: left;
+
+        }
+
+
+        .center-menu {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        .center-menu a {
+            /* border: 2px solid black; */
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .right-menu {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+
+        }
+
+        .right-menu input {
+            margin-right: 10px;
+        }
+
+        .right-menu a {
+            color: white;
+        }
+
+        .center-menu a:hover {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: url(/shutters-669296_1280.jpg);
+            z-index: -1;
+            opacity: 0.7;
+
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 16%;
+        }
+
+        .container h1 {
+            font-size: 35px;
+        }
+
+        .search-dropdown {
+            font-size: 23px;
+            padding: 8px;
+            /* border: 1px solid black; */
+            border-radius: 4px;
+        }
+
+        .search-input {
+            font-size: 23px;
+            padding: 8px;
+            /* border: 1px solid black; */
+            border-radius: 4px;
+        }
+
+        .button-search {
+            font-size: 23px;
+            padding: 8px;
+            /* border: 1px solid black; */
+            border-radius: 4px;
+        }
+
+        .search-dropdown:hover {
+            cursor: pointer;
+
+        }
+
+        .button-search:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div class="logo">Listed</div>
+        <div class="center-menu">
+            <a href="index.Html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="right-menu">
+            <input type="text" placeholder="Search">
+            <a href="login.html">login</a>
+        </div>
+    </div>
+
+    <section class="container">
+        <h1>Find Nearby Appartments</h1>
+        <div class="search">
+            <select class="search-dropdown">
+                <option value="option1">option1</option>
+                <option value="option2">option2</option>
+                <option value="option3">option3</option>
+            </select>
+            <input type="text" class="search-input" placeholder="enter your search">
+            <button class="button-search">search</button>
+        </div>
+
+    </section>
+</body>
+
+</html>
